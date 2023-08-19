@@ -69,6 +69,17 @@ public class Main {
         System.out.println(c);
 
         //Solve quadratic equation (A = 1, B = -2, C = -15)
+        double A = 1;
+        double B = -2;
+        double C = -15;
+        double det = B*B - 4*A*C;
+        double topPos = -B + Math.sqrt(det);
+        double topNeg = -B - Math.sqrt(det);
+
+        double answerPos = topPos / ( 2 * A );
+        double answerNeg = topNeg / (2*A);
+
+        System.out.println("(" + answerNeg + ", " + answerPos + ")");
 
     }
 }
