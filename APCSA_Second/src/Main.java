@@ -71,7 +71,15 @@ public class Main {
         double A = 2;
         double B = 1;
         double C = -15;
-        
+        double det = B*B - 4*A*C;
+        double topPos = -B + Math.sqrt(det);
+        double topNeg = -B - Math.sqrt(det);
+
+        double ans1 = topPos / (2 * A);
+        double ans2 = topNeg / (2*A);
+
+        System.out.println("(" + ans1 + ", " + ans2 + ")");
+
 
 
 
