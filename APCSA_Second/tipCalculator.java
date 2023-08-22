@@ -1,7 +1,7 @@
-double subTotal = Math.random() * (20 - 40) + 40;
+double subTotal = Math.random() * (40 - 20) + 20;
 double tipPercentage = 0.22;
 
-double tipAmount = subTotal * tipPercentage
+double tipAmount = subTotal * tipPercentage;
 
 double total = subTotal + tipAmount;
 

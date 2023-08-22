@@ -79,6 +79,15 @@ public class Main {
         int B = -1;
         int C = -15;
 
+        double det = B*B - 4*A*C;
+        double topPlus = -B + Math.sqrt(det);
+        double topMinus = -B - Math.sqrt(det);
+
+        double ansPlus = topPlus / (2 * A);
+        double ansMinus = topMinus / (2*A);
+
+        System.out.println("(" + ansPlus + ", " + ansMinus + ")");
+
 
 
 
