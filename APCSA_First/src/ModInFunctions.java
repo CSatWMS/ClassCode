@@ -4,13 +4,22 @@ public class ModInFunctions {
 
     public static void main(String[] args) {
         changeCalculator(26.57, 100);
+        //int x = 3.9;
     }
 
     //MathMaster
-        //print out: sum, difference, remainder, product, and a^b for 2 numbers
-        //can't actually do any math in mathMaster
+        //print out: sum, remainder, product, and a^b for 2 numbers
+        //can't actually do any arithmetic in mathMaster
 
-    
+    static void MathMaster(int a, int b){
+        //step 1: code sum function
+        int addedTogether = sum(a, b);
+        System.out.println(a + " + " + b + " = " + addedTogether); //3 + 4 = 7
+    }
+
+    static int sum(int a, int b){
+        return a + b;
+    }
 
     //GOAL: Print out the number of 20's, 10's, 5's, 1's
     static void changeCalculator(double price, double amtTendered){
