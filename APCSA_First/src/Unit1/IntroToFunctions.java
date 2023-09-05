@@ -1,3 +1,5 @@
+package Unit1;
+
 public class IntroToFunctions {
     //functions in java are also methods
 
