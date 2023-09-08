@@ -58,4 +58,44 @@ void setup(){
    println("perimeter: " + perimeter);
    
    
+   float root = sqrt(49);
+   println(root);
+   
+   //make a and b (3 and 4)
+   //calculate c
+   //print out your answer
+   
+   int a = 3;
+   int b = 4;
+   int aSquared = a * a;
+   int underTheRoot = aSquared + b*b;
+   float c = sqrt(underTheRoot);
+   println(c);
+   
+   
+   //^ is not exponents! (It's the bitwise XOR)
+   //pow(base, exponent)
+     //2^4 -> pow(2, 4)
+     //pow(number, .5)
+     
+  float sixteen = pow(4, 2);
+  
+  float R = 2;
+  float S = 5;
+  float T = -12;
+  
+  //calculate your two roots
+  float fourRT = 4 * R * T;
+  float rootPart = sqrt(S*S - fourRT);
+  float posTop = -S + rootPart;
+  float negTop = -S - rootPart;
+  float posAns=posTop/(2*R);
+  float negAns = negTop / (2 * R);
+  println("(" + posAns + ", " + negAns + ")");
+  
+  //calculate the area of a triangle
+  
+  
+  
+   
 }
