@@ -25,6 +25,8 @@ void buttons(int x, int y, int diam){
 }
 
 void eyeballs(int x, int y, int diam){
+  fill(0, 0, 0);
+  stroke(0, 0, 0);
   int offsetY = diam / 4;
   //y value for eyeballs?
   int yball = y - offsetY;
@@ -33,12 +35,16 @@ void eyeballs(int x, int y, int diam){
   //right x eye?
   //eye diam?
   int eyeDiam = diam / 8;
-  circle(x, yball, eyeDiam);
+  int offsetX = diam / 5;
+  int xBallLeft = x - offsetX;
+  int xBallRight = x + offsetX;
+  circle(xBallLeft, yball, eyeDiam);
+  circle(xBallRight, yball, eyeDiam);
 }
 
 void draw(){
     background(0, 0, 0);
-   int headX = mouseX;
+   int headX = width / 2;//mouseX;
    int headDiam = mouseY;
    int headY = headDiam / 2;
    drawBodyPart(headX, headY, headDiam);
@@ -54,4 +60,5 @@ void draw(){
    int footDiam = headDiam * 3;
    int footY = bodyY + bodyDiam / 2 + footDiam / 2;
    drawBodyPart(footX, footY, footDiam);
+   
 }
