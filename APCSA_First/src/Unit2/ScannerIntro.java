@@ -1,3 +1,5 @@
+package Unit2;
+
 import java.util.Scanner;
 
 public class ScannerIntro {

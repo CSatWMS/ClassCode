@@ -1,17 +1,19 @@
+package Unit2;
+
 public class SwitchIntro {
     public static void main(String[] args) {
-        String dayOfWeek = "Thursday";
-        if (dayOfWeek.equals("Sunday")){
+        String dayOfTheWeek = "Monday";
+        if (dayOfTheWeek.equals("Sunday")){
             System.out.println(1);
-        } else if (dayOfWeek.equals("Monday")){
+        } else if (dayOfTheWeek.equals("Monday")){
             System.out.println(2);
-        } //... list out all the days...
+        } //continue for other days...
 
         //switch statement
-        switch (dayOfWeek) {
+        switch (dayOfTheWeek) {
             case "Sunday":
                 System.out.println(1);
-                break; //break exits the current control structure
+                break; //exit the current control structure
             case "Monday":
                 System.out.println(2);
                 break;
@@ -31,10 +33,22 @@ public class SwitchIntro {
                 System.out.println(7);
                 break;
             default:
-                System.out.println("Invalid day of week");
+                System.out.println("Invalid week day");
                 break;
         }
 
-
+        //Given a month number, determine how many days are in that month
+        int monthNumber = 3;
+        switch (monthNumber) {
+            case 11, 4, 6, 9:
+                System.out.println("30 days");
+                break;
+            case 2:
+                System.out.println("28, arguable 29, days");
+                break;
+            default:
+                System.out.println("31 days");
+                break;
+        }
     }
 }
