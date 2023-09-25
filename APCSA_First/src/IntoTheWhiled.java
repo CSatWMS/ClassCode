@@ -90,6 +90,6 @@ public class IntoTheWhiled {
             catDogIndex++;
         }
         System.out.println(catCount == dogCount);
-        
+
     }
 }
