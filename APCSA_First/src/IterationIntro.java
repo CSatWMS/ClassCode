@@ -44,7 +44,7 @@ public class IterationIntro {
         System.out.println(word.charAt(4));
 
         int index = 0;
-        while (index < word.length()){
+        while (index <= word.length()){
             System.out.println(word.charAt(index));
             index++;
         }
