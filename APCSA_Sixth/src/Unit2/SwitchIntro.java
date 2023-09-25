@@ -1,3 +1,5 @@
+package Unit2;
+
 public class SwitchIntro {
     public static void main(String[] args) {
         String dayOfWeek = "Thursday";
