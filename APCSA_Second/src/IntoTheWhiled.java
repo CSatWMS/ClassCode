@@ -129,7 +129,7 @@ public class IntoTheWhiled {
             //index! (do I start at front or back?)
         //LOOP
             //grab letter
-            char currLetter = sentence.charAt(i);
+           // char currLetter = sentence.charAt(i);
             //test letter
                 //put in appropriate basket
             //update index
