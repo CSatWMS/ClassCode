@@ -38,6 +38,10 @@ public class ForLoopIntro {
         System.out.println(countVowels(str));
     }
 
+
+
+
+
     //do we contain adjacent duplicates
     public static boolean containsAdjDups(String str){
         for (int i = 0; i < str.length() - 1; i++){
