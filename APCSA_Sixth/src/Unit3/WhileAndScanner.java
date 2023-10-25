@@ -1,3 +1,5 @@
+package Unit3;
+
 import java.util.Scanner;
 
 public class WhileAndScanner {
