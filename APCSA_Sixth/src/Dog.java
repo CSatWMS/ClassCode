@@ -15,6 +15,20 @@ public class Dog {
         isHungry = iH;
     }
 
+    public Dog(String n, String b, boolean iH){
+        name = n;
+        breed = b;
+        isHungry = iH;
+        numLegs = 4;
+    }
+
+    public Dog(String b, int nL, boolean iH){
+        breed = b;
+        numLegs = nL;
+        isHungry = iH;
+        name = "buddy";
+    }
+
     //Instance methods
 
     //GOAL: greet a person
@@ -88,5 +102,18 @@ public class Dog {
         } else {
             isHungry = true;
         }
+    }
+
+    //toString()
+    public String toString(){
+        String toReturn = "";
+        toReturn += "name: " + name;
+        toReturn += "\nnumber of legs: " + numLegs;
+        if (isHungry){
+            toReturn += "\nI am hungry";
+        } else {
+            toReturn += "\nI am NOT hungry";
+        }
+        return toReturn;
     }
 }
