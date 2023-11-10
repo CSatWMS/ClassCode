@@ -19,5 +19,12 @@ public class DogPark {
 
         littleDog.setName("Candy");
         littleDog.greet();
+
+        Dog dude = new Dog(2, "lab", 25, .2, true);
+        dude.greet();
+
+        System.out.println(littleDog);
+        System.out.println(bigDog);
+
     }
 }

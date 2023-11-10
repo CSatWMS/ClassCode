@@ -21,6 +21,25 @@ public class Dog {
         hasTail = hT;
     }
 
+    //overloading
+    public Dog(int a, String b, int w, double oL, boolean hT){
+        age = a;
+        breed = b;
+        weight = w;
+        obedienceLevel = oL;
+        hasTail= hT;
+        name = "buddy";
+    }
+
+    public Dog(String n, int a, int w, double oL, boolean hT){
+        age = a;
+        breed = "mixed";
+        weight = w;
+        obedienceLevel = oL;
+        hasTail= hT;
+        name = n;
+    }
+
     //GOAL: create a greet() method
     public void greet(){
         System.out.println("Hello, my name is " + name + " and I AM SO EXCITED TO MEET YOU!");
@@ -93,4 +112,11 @@ public class Dog {
     }
 
 
+    //toString()
+    public String toString(){
+        String toReturn = "";
+        toReturn += "Name: " + name;
+        toReturn += "\nBreed: " + breed;
+        return toReturn;
+    }
 }

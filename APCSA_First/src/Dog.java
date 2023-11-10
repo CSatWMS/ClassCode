@@ -16,6 +16,21 @@ public class Dog {
         amtOfFluffiness = amt;
     }
 
+    //overload
+    public Dog(String n, int a, int amt){
+        name = n;
+        age = a;
+        amtOfFluffiness = amt;
+        numLegs = 4;
+    }
+
+    public Dog(int a, int nL, int amt){
+        age = a;
+        numLegs = nL;
+        amtOfFluffiness = amt;
+        name = "buddy";
+    }
+
     //GOAL: write a greet method, for our dog
     public void greet(){
         System.out.println("Hello! My name is " + name + " and I AM SO HAPPY TO MEET YOU!");
@@ -96,6 +111,12 @@ public class Dog {
         amtOfFluffiness = newAmt;
     }
 
-
+    //toString()
+    public String toString(){
+        String toReturn = "";
+        toReturn += "Name: " + name;
+        toReturn += "\nNumber of legs: " + numLegs;
+        return toReturn;
+    }
 
 }

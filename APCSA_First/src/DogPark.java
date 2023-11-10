@@ -16,5 +16,12 @@ public class DogPark {
         dog2.bark();
 
         System.out.println(dog1.getAge());
+
+        Dog d3 = new Dog("Carrie", 9, 4);
+        Dog d4 = new Dog(2, 4, 8);
+
+
+        System.out.println(dog1);
+        System.out.println(dog2);
     }
 }
