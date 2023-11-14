@@ -7,7 +7,7 @@ public class Book {
     private static int totalNumPagesRead = 0;
 
     private static final double taxRate = 0.075;
-    
+
 
     public Book(String title, String author, String color, String genre, int numPages, int currPage, boolean isPaperback){
         this.title = title;
