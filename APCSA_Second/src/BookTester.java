@@ -12,5 +12,12 @@ public class BookTester {
         b2.read();
         System.out.println(Book.getTotalNumPagesReadEVER());
 
+
+        Library lib = new Library();
+        lib.addBook(b1);
+        lib.addBook(b2);
+        System.out.println(lib);
+        System.out.println(lib.findBookByTitle("The Lorax"));
+        System.out.println(lib.findBookByTitle("THe cat in the hat"));
     }
 }

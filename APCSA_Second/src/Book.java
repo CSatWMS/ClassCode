@@ -25,6 +25,10 @@ public class Book {
         this.title = title;
     }
 
+    public String getTitle(){
+        return title;
+    }
+
     public void setAuthor(String author){
         this.author = author;
     }

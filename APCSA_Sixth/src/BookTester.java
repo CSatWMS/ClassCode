@@ -19,5 +19,12 @@ public class BookTester {
         }
 
         System.out.println(Book.getTotalNumPagesRead());
+
+        Library lib = new Library();
+        lib.addBook(b1);
+        lib.addBook(b2);
+        System.out.println(lib);
+        System.out.println(lib.locateByTitle("The Lorax"));
+        System.out.println(lib.locateByTitle("Harry Potter"));
     }
 }

@@ -72,5 +72,9 @@ public class Book {
         }
     }
 
+    public String getAuthor(){
+        return author;
+    }
+
 
 }

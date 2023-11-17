@@ -16,6 +16,7 @@ public class Dog {
     }
 
     public Dog(String n, String b, boolean iH){
+        this(n, 4, b, iH);
         name = n;
         breed = b;
         isHungry = iH;
