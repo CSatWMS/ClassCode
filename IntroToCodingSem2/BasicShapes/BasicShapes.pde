@@ -4,8 +4,6 @@ void setup(){
   size(800, 400);
 }
 
-
-
 void draw() {
   background(255, 255, 255);
  
@@ -23,6 +21,7 @@ void draw() {
   
   fill(0, 0, 255);
   stroke(255, 255, 255);
+  strokeWeight(10);
   //rect(x, y, width, height) -> x and y are the top left corner
   rect(300, 100, 100, 40);
   
