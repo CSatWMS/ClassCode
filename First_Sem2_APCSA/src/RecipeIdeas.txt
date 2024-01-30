@@ -1,0 +1,22 @@
+Recipe
+    Name -> String
+    Ingredient -> ArrayList<Ingredient>
+        quantity/amount (double)
+        measurement/unit (String)
+        name (String)
+
+        constructor -> 3 parameters
+        getters/setters for everything
+        toString
+    Steps -> Collection of Strings
+        OvenHeatTemp
+    Supplies/Utensils
+    PrepTime/CookTime -> ints
+    ServingSize -> int
+
+    -------------------
+    Add to cookbook
+    See the ingredient list
+        view the whole thing
+    add/remove ingredient
+    scale the recipe (double batch, half batch)
