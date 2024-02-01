@@ -20,11 +20,13 @@ public class Recipe {
             //papi's rice x 3
     //update ingr amounts, serving size, all else is the same
     public Recipe scaleIt(double factor){
-        String newName = ""; //something like originalName x factor
-        int newServingSize = (int) (this.servingSize * factor);
-        int oldPrepTime = -1; //where does this come from?
-        int oldCookTime = -1; //??
-        Recipe toReturn = new Recipe(newName, newServingSize, oldPrepTime, oldCookTime);
+        String newName = this.name + " x " + factor;
+        int newServsingSize = (int) (servingSize * factor);
+        Recipe toReturn = new Recipe(newName, this.prepTime, this.cookTime, newServsingSize);
+        for (Ingredient currIngr : ingrList){
+            double newAmount = currIngr.getQuantity() * factor;
+            toReturn.addIngr(newAmount, currIngr.getUnit(), currIngr.getName());
+        }
         return toReturn;
     }
 
