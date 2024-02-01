@@ -1,0 +1,19 @@
+Recipe
+    recipeName String
+    ingredients ArrayList<Ingredient>
+        measurements/amount/quantity -> double
+        units (cup, tsp, etc) -> String
+        name -> String
+
+        constructor (all three params)
+        toString()
+    steps ArrayList<String>
+    times ints
+    servingSize int
+    materials/supplies (vetoed)
+
+    -------
+    display the recipe
+    add/remove ingredients
+        update ingredient
+    scale it
