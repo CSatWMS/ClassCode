@@ -1,3 +1,5 @@
+package Unit6;
+
 public class CookBook {
     public static void main(String[] args) {
         //Make an ingredient

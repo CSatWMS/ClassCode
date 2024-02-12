@@ -1,3 +1,5 @@
+package Unit6;
+
 public class Ingredient {
     //private dataType varName;
     private double amount;
