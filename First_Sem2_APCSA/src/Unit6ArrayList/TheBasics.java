@@ -1,40 +1,40 @@
+package Unit6ArrayList;
+
 import java.util.Arrays;
 
 public class TheBasics {
     public static void main(String[] puppies) {
         //dataType varName = value;
-        int myFavNum = 11;
-        makeSentence(myFavNum);
-        boolean result = isEven(myFavNum);
+        int myFavNumber = 11;
+        makeSentence(myFavNumber);
+        boolean result = isEven(myFavNumber);
         System.out.println(result);
 
-        //dt arrName[] = {val1, val2, val3, etc};
+        //dt[] arrName = {val1, val2, etc};
             //dt[] arrName = new dt[size];
 
-        int[] numbers = {11, 62, 57, 23, 94};
+        int[] numbers = {11, 17, 62, 54, 23};
 
-        //for (initialization ; condition ; update)
+        //for (initialization ; condition(s) ; update)
         for (int i = 0; i < numbers.length; i++){
             System.out.print(numbers[i] + ", ");
+            //makeSentence(numbers[i]);
         }
         System.out.println();
-
         System.out.println(numbers);
         System.out.println(Arrays.toString(numbers));
         makeSentence(numbers);
 
-    } // ends my main method
+    } //ends my main method
 
-    //GOAL: overload the makeSentence
-        //it should now take in an array of numbers
-        //it should make sentences about each number
+    //GOAL: Overload makeSentence to create sentence about an array of numbers
     public static void makeSentence(int[] numbers){
         for (int num : numbers){
             makeSentence(num);
         }
     }
 
-    //GOAL: print a sentence about your favorite number
+    //GOAL: print out a sentence about your fav number
     public static void makeSentence(int number){
         System.out.print("My favorite number is " + number);
         if (isEven(number)){
@@ -44,17 +44,14 @@ public class TheBasics {
         }
     }
 
-    //GOAL: Write a function that returns a boolean
-        //call it: isEven
-            //return true -> if my number is even
-            //return false -> if my number is odd
+    //GOAL: a method, isEven, take in a number, and return a boolean
+        //true -> if that number is even
+        //false -> if that number is odd
     public static boolean isEven(int number){
         if (number % 2 == 0) {
             return true;
         } else
             return false;
-
     }
-
 
 } //ends the class

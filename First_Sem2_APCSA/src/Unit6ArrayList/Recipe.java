@@ -1,24 +1,25 @@
-import java.util.ArrayList;
+package Unit6ArrayList;
 
+import java.util.ArrayList;
 public class Recipe {
     private String name;
     private ArrayList<Ingredient> ingrList;
     private ArrayList<String> stepList;
-    private int servingSize, prepTime, cookTime;
+    private int prepTime, cookTime, servingSize;
 
-    public Recipe(String name, int s, int p, int c){
+    public Recipe(String name, int p, int c, int s){
         this.name = name;
-        servingSize = s;
         prepTime = p;
         cookTime = c;
+        servingSize = s;
         ingrList = new ArrayList<Ingredient>();
         stepList = new ArrayList<String>();
     }
 
     //GOAL: create a new, scaled recipe
         //name: originalName x factor
-            //papi's rice x 3
-    //update ingr amounts, serving size, all else is the same
+            //papi's x 3
+        //update ingr amounts, serving size, all else is the same
     public Recipe scaleIt(double factor){
         String newName = this.name + " x " + factor;
         int newServsingSize = (int) (servingSize * factor);
@@ -30,15 +31,9 @@ public class Recipe {
         return toReturn;
     }
 
-    public void addIngr(Ingredient i){
-        ingrList.add(i);
-    }
-
-    public void addIngr(double quant, String unit, String name){
-        Ingredient toAdd = new Ingredient(quant, unit, name);
-        ingrList.add(toAdd);
-    }
-
+    //GOAL: write add step method
+        //overload so it can also be inserted at a location
+        //test in CookBook- add some steps!
     public void addStep(String step){
         stepList.add(step);
     }
@@ -47,20 +42,48 @@ public class Recipe {
         stepList.add(location, step);
     }
 
+    public void addIngr(double q, String u, String n){
+        Ingredient i = new Ingredient(q, u, n);
+        ingrList.add(i);
+    }
+
+    public void addIngr(Ingredient i){
+        ingrList.add(i);
+    }
+
     public String toString(){
         String toReturn = name;
         toReturn += "\n";
-        //loop over ingredients
-        for (int i = 0; i < ingrList.size(); i++) {
-            //add each ingredient's toString to the toReturn
-            toReturn += "\t" + ingrList.get(i) + "\n";
+        for (int i = 0; i < ingrList.size(); i++){
+            toReturn += "\t";
+            toReturn += ingrList.get(i);
+            toReturn += "\n";
         }
-        //ignore steps for now...
-        //add additional info
-        toReturn += "Serving Size: " + servingSize + "\n";
+        toReturn += "---Step List---\n";
+        for (String s : stepList){
+            toReturn += s + "\n";
+        }
+        toReturn += "---Addnl info---\n";
+        toReturn += "Serving size: " + servingSize + "\n";
         toReturn += "Prep Time: " + prepTime + "\n";
         toReturn += "Cook Time: " + cookTime + "\n";
         return toReturn;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrepTime(int prepTime) {
+        this.prepTime = prepTime;
+    }
+
+    public void setCookTime(int cookTime) {
+        this.cookTime = cookTime;
+    }
+
+    public void setServingSize(int servingSize) {
+        this.servingSize = servingSize;
     }
 
     public String getName() {
@@ -75,15 +98,15 @@ public class Recipe {
         return stepList;
     }
 
-    public int getServingSize() {
-        return servingSize;
-    }
-
     public int getPrepTime() {
         return prepTime;
     }
 
     public int getCookTime() {
         return cookTime;
+    }
+
+    public int getServingSize() {
+        return servingSize;
     }
 }

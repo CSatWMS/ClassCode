@@ -1,3 +1,5 @@
+package Unit6ArrayList;
+
 public class CookBook {
     public static void main(String[] args) {
         Ingredient i1 = new Ingredient(1, "tsp", "salt");

@@ -1,28 +1,31 @@
+package Unit6ArrayList;
+
 public class Ingredient {
     //private dataType varName;
     private double quantity;
-    private String unit, name;
+    private String unit;
+    private String name;
 
     /*
-    public ClassName(paramDT paramName, etc) {
+    public ClassName(paramDataType paramName, etc){
         this.varName = paramName;
     }
-     */
-
+    */
     public Ingredient(double q, String u, String n){
         quantity = q;
-        this.unit = u;
+        unit = u;
         name = n;
     }
-    public String toString() {
+
+    public String toString(){
         return quantity + " " + unit + " " + name;
     }
 
-    //public dt getVarName()
-    // { return varName; }
+    //public void setVarName(dt varName)
+    // {this.varName = varName;}
 
-    //public void setVarName(dt paramName)
-    // { this.varName = paramName; }
+    //public dt getVarName()
+    // { return varName;}
 
 
     public double getQuantity() {
