@@ -1,5 +1,9 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class BankConsortium {
     public static void main(String[] args) {
+        /*
         BankAccount richGuy = new BankAccount(1000000);
         BankAccount lessRichGuy = new BankAccount();
         System.out.println(richGuy);
@@ -20,7 +24,33 @@ public class BankConsortium {
         }
         System.out.println(counter);
 
+        CheckingAccount c1 = new CheckingAccount(100);
+        System.out.println(c1);
+        c1.withdraw(200);
+        c1.withdraw(200);
+        System.out.println(c1);
+
         //BankConsortium craziness = new BankConsortium();
+
+        */
+
+
+        BankAccount crazy = new SavingsAccount(200, 0.05);
+        crazy.withdraw(100);
+        System.out.println(crazy.checkBalance());
+        //crazy.compoundInterest();
+        //When I can do a more specific thing, I do the more specific thing
+        System.out.println(crazy.toString());
+
+        ArrayList<BankAccount> banks = new ArrayList<BankAccount>();
+        banks.add(new BankAccount());
+        banks.add(new CheckingAccount(100));
+        banks.add(new SavingsAccount(100, 0.05));
+        for (BankAccount b : banks){
+            b.deposit(50);
+            b.withdraw(500);
+            System.out.println(b);
+        }
 
     }
 }
