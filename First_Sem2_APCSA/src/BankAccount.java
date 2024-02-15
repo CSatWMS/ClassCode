@@ -1,4 +1,4 @@
-public class BankAccount {
+public class BankAccount implements Measurable{
     private double balance;
 
     public BankAccount(double balance){
@@ -8,6 +8,10 @@ public class BankAccount {
     //Default Constructor
     public BankAccount(){
         this(0);
+    }
+
+    public double getMeasure(){
+        return balance;
     }
 
     //deposit, withdraw, checkBalance

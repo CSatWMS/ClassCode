@@ -1,4 +1,4 @@
-public class BankAccount {
+public class BankAccount implements Measurable{
     private double balance;
     private String ownerName;
 
@@ -12,6 +12,10 @@ public class BankAccount {
         this("Unknown", 0);
             //the this() invokes the previous constructor
                 //feed it params, then initializes instance vars
+    }
+
+    public double getMeasure(){
+        return balance;
     }
 
     //deposit(amt) | withdraw(amt) | checkBalance()

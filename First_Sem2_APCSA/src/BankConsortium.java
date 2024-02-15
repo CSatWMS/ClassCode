@@ -48,9 +48,34 @@ public class BankConsortium {
         banks.add(new SavingsAccount(100, 0.05));
         for (BankAccount b : banks){
             b.deposit(50);
+            b.getMeasure();
             b.withdraw(500);
             System.out.println(b);
         }
 
+        Measurable m1 = new BankAccount();
+        //very TIGHT jacket
+        System.out.println(m1.getMeasure());
+
+
     }
+
+    public static double getTotalMeasure(ArrayList<Measurable> things){
+        double total = 0;
+        for (int i = 0; i < things.size(); i++){
+            Measurable item = things.get(i);
+            total += item.getMeasure();
+        }
+        return total;
+    }
+
 }
+
+
+
+
+
+
+
+
+

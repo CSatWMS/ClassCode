@@ -1,5 +1,8 @@
+import java.util.ArrayList;
+
 public class BankConsortium {
     public static void main(String[] args) {
+        /*
         BankAccount b1 = new BankAccount("Jeff Be$o$", 1000000000);
         BankAccount b2 = new BankAccount("Bubba", 27);
         b1.withdraw(100);
@@ -23,11 +26,37 @@ public class BankConsortium {
         }
         System.out.println(counter);
 
+        CheckingAccount c1 = new CheckingAccount("Bob", 100);
+        System.out.println(c1);
+        c1.withdraw(200);
+        System.out.println(c1);
+        c1.withdraw(200);
+        System.out.println(c1);
+
+        */
+
+        BankAccount crazy = new SavingsAccount("Somebody", 100, 0.02);
+        crazy.deposit(100);
+        crazy.withdraw(20);
+        //crazy.compoundInterest();
+        //when I can do a more specific thing, I do the more specific thing
+        System.out.println(crazy.toString());
+
+        ArrayList<BankAccount> accounts = new ArrayList<BankAccount>();
+        accounts.add(new BankAccount());
+        accounts.add(new SavingsAccount("Another dude", 50, .10));
+        accounts.add(new CheckingAccount("third person"));
+
+        for (BankAccount b : accounts){
+             b.deposit(300);
+            b.withdraw(1000);
+            System.out.println(b);
+        }
 
 
-
-
-
+        Measurable m1 = new BankAccount();
+        //a very TIGHT jacket
+        System.out.println(m1.getMeasure());
 
 
 
@@ -38,5 +67,14 @@ public class BankConsortium {
         BankConsortium crazy = new BankConsortium();
         System.out.println(crazy);
          */
+    }
+
+    public static double getTotalMeasure(ArrayList<Measurable> things){
+        double total = 0;
+        for (int i = 0; i < things.size(); i++){
+            Measurable item = things.get(i);
+            total += item.getMeasure();
+        }
+        return total;
     }
 }

@@ -50,5 +50,20 @@ public class BankConsortium {
             b.deposit(200);
             System.out.println(b);
         }
+
+        Measurable m1 = new BankAccount();
+        //this is a TIGHT jacket
+        System.out.println(m1.getMeasure());
+        //System.out.println(m1.deposit(2)); the one arm jacket thing
+        System.out.println(m1);
+    }
+
+    public static double totalMeasure(ArrayList<Measurable> things){
+        double total = 0;
+        for (int i = 0; i < things.size(); i++){
+            Measurable item = things.get(i);
+            total += item.getMeasure();
+        }
+        return total;
     }
 }
