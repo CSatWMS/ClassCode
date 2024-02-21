@@ -14,8 +14,32 @@ void setup(){
   println(PI);
   float areaAnswer = areaCircle(2);
   println(areaAnswer);
+  
+  int area2 = rectArea(3, 5);
+  println(area2);
+  int area3 = rectArea(10, 15);
+  println(area3);
+  
+  int perimAnswer = rectPerim(3, 5);
+  println(perimAnswer);
+  
 } //this curly belongs to setup
 
+//GOAL: Calculate 'c' using the pythagoream theorem
+
+
+//GOAL: calculate the perimeter of a rectanlge
+int rectPerim(int len, int wid){
+   int perim = len *2 + wid*2;
+   int otherPerim = len + len + wid + wid;
+   return perim;
+}
+
+//GOAL: calculate the area of a rectangle
+int rectArea(int len, int wid){
+   int area = len * wid;
+   return area;
+}
 
 //GOAL: calculate the area of a circle
 float areaCircle(float radius){
