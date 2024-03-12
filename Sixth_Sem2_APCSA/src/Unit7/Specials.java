@@ -1,3 +1,5 @@
+package Unit7;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -52,11 +54,11 @@ public abstract class Specials extends ComicCharacter implements Fighter{
                 ComicCharacter comicOther = (ComicCharacter) other;
                 comicOther.setHungry(true);
 
-              //  ((ComicCharacter) other).setHungry(true);
+              //  ((Unit7.ComicCharacter) other).setHungry(true);
             }
             return true;
         } else if (this.getFightScore() < other.getFightScore()) {
-            //if (this instanceof ComicCharacter){
+            //if (this instanceof Unit7.ComicCharacter){
                 this.setHungry(true);
             //}
             return false;

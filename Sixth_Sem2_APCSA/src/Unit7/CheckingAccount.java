@@ -1,3 +1,5 @@
+package Unit7;
+
 public class CheckingAccount extends BankAccount {
     public static double overDraftFee = 75.00;
 

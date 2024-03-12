@@ -1,3 +1,5 @@
+package Unit7;
+
 public class SuperHero extends Specials {
     private boolean hasSideKick;
 
@@ -12,7 +14,7 @@ public class SuperHero extends Specials {
             this.setStrength(this.getStrength() + 1);
             other.setStrength(other.getStrength() + 1);
             this.sayCatchPhrase();
-            ( (SuperHero) other).sayCatchPhrase(); //( (Specials) other).sayCatchPhrase(); also okay
+            ( (SuperHero) other).sayCatchPhrase(); //( (Unit7.Specials) other).sayCatchPhrase(); also okay
         }
     }
 }

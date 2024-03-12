@@ -1,8 +1,10 @@
+package Unit7;
+
 public class SavingsAccount extends BankAccount {
     private double interestRate;
 
     public SavingsAccount(String ownerName, double balance, double interestRate){
-        //this.ownerName = ownerName; //has private access in BankAccount
+        //this.ownerName = ownerName; //has private access in Unit7.BankAccount
         //this.interestRate = interestRate; //CANNOT HAPPEN before super
         super(ownerName, balance); //super MUST be the first thing in a subclass constructor
         this.interestRate = interestRate;

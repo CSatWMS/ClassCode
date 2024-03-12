@@ -1,3 +1,5 @@
+package Unit7;
+
 public abstract class ComicCharacter {
     private String name;
     private int strength, defense;

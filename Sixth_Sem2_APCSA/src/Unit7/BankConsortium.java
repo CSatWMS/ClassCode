@@ -1,15 +1,17 @@
+package Unit7;
+
 import java.util.ArrayList;
 
 public class BankConsortium {
     public static void main(String[] args) {
-        /*BankAccount b1 = new BankAccount("Jeff Be$o$", 35000000000.0);
-        BankAccount b2 = new BankAccount("Bubba");
+        /*Unit7.BankAccount b1 = new Unit7.BankAccount("Jeff Be$o$", 35000000000.0);
+        Unit7.BankAccount b2 = new Unit7.BankAccount("Bubba");
         b1.withdraw(100);
         b2.deposit(47);
         System.out.println(b1);
         System.out.println(b2);
 
-        SavingsAccount s1 = new SavingsAccount("Ms Snyder", 50, 0.05);
+        Unit7.SavingsAccount s1 = new Unit7.SavingsAccount("Ms Snyder", 50, 0.05);
         //s1.setOwnerName("Ms. Christina Snyder");
         //s1.deposit(50);
         System.out.println(s1);
@@ -23,7 +25,7 @@ public class BankConsortium {
         }
         System.out.println(count);
 
-        CheckingAccount c1 = new CheckingAccount("Ursula", 300);
+        Unit7.CheckingAccount c1 = new Unit7.CheckingAccount("Ursula", 300);
         System.out.println(c1);
         c1.withdraw(600);
         System.out.println(c1);
