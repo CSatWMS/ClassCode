@@ -1,3 +1,5 @@
+package Unit7Inheritance;
+
 public class CheckingAccount extends BankAccount {
     //no instance variables
 

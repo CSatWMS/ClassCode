@@ -1,3 +1,5 @@
+package Unit7Inheritance;
+
 public class SuperHero extends Specials{
     private boolean hasSideKick;
 

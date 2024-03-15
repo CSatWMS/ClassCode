@@ -1,3 +1,5 @@
+package Unit7Inheritance;
+
 public abstract class Specials extends ComicCharacter implements Fighter{
     private Power superPower;
     private String catchPhrase;

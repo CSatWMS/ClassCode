@@ -1,3 +1,5 @@
+package Unit7Inheritance;
+
 public class Power {
     private String ability;
     private int rating;
@@ -9,7 +11,7 @@ public class Power {
 
     @Override
     public String toString() {
-        return "Power{" +
+        return "Unit7Inheritance.Power{" +
                 "ability='" + ability + '\'' +
                 ", rating=" + rating +
                 '}';

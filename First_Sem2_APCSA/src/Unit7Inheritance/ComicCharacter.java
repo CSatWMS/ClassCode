@@ -1,24 +1,31 @@
+package Unit7Inheritance;
+
 public abstract class ComicCharacter {
+    public abstract void interactWith(ComicCharacter other);
+
     private String name;
     private int strength;
     private int defense;
     private String placeOfBirth;
-    private String gender;
+    private boolean isHuman;
 
-    public ComicCharacter(String name, int str, int def, String pOB, String gender){
+    public ComicCharacter(String name, int str, int def, String pOB, boolean iH){
         this.name = name;
         strength = str;
         defense = def;
         placeOfBirth = pOB;
-        this.gender = gender;
+        isHuman = iH;
     }
 
-    public abstract void interactWith(ComicCharacter other);
-
     public String toString(){
-        String toReturn = "My name is " + name + " and I am a " + gender;
+        String toReturn = "My name is " + name;
+        toReturn += " and I was born in " + placeOfBirth;
         toReturn += ". My strength and defense scores are " + strength + " and " + defense;
-        toReturn += ". I was born in " + placeOfBirth + "!";
+        String not = " not";
+        if (isHuman){
+            not = "";
+        }
+        toReturn += ". I am" + not + " human!";
         return toReturn;
     }
 
@@ -54,11 +61,11 @@ public abstract class ComicCharacter {
         this.placeOfBirth = placeOfBirth;
     }
 
-    public String getGender() {
-        return gender;
+    public boolean isHuman() {
+        return isHuman;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setHuman(boolean human) {
+        isHuman = human;
     }
 }

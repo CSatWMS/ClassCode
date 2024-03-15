@@ -1,3 +1,5 @@
+package Unit7Inheritance;
+
 public interface Measurable {
     //not a class
     //cannot be instantiated

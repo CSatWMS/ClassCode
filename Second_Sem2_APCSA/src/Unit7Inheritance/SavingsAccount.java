@@ -1,7 +1,9 @@
+package Unit7Inheritance;
+
 public class SavingsAccount extends BankAccount {
     private double interestRate;
     public SavingsAccount(String ownerName, double initialBalance, double interestRate){
-        //super.ownerName = ownerName; //MAD -> bc private to BankAccount
+        //super.ownerName = ownerName; //MAD -> bc private to Unit7Inheritance.BankAccount
         //this.interestRate = interestRate; //Makes super MAD bc he has to be first
         super(ownerName, initialBalance); //invokes the super class constructor
         this.interestRate = interestRate;

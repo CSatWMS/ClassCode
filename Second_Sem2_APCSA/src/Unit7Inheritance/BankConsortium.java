@@ -1,16 +1,18 @@
+package Unit7Inheritance;
+
 import java.util.ArrayList;
 
 public class BankConsortium {
     public static void main(String[] args) {
         /*
-        BankAccount b1 = new BankAccount("Jeff Be$o$", 1000000000);
-        BankAccount b2 = new BankAccount("Bubba", 27);
+        Unit7Inheritance.BankAccount b1 = new Unit7Inheritance.BankAccount("Jeff Be$o$", 1000000000);
+        Unit7Inheritance.BankAccount b2 = new Unit7Inheritance.BankAccount("Bubba", 27);
         b1.withdraw(100);
         b2.deposit(250);
         System.out.println(b1);
         System.out.println(b2);
 
-        SavingsAccount s1 = new SavingsAccount("Christina Snyder", 10, 0.05);
+        Unit7Inheritance.SavingsAccount s1 = new Unit7Inheritance.SavingsAccount("Christina Snyder", 10, 0.05);
         s1.deposit(200);
         s1.withdraw(20);
         System.out.println(s1);
@@ -26,7 +28,7 @@ public class BankConsortium {
         }
         System.out.println(counter);
 
-        CheckingAccount c1 = new CheckingAccount("Bob", 100);
+        Unit7Inheritance.CheckingAccount c1 = new Unit7Inheritance.CheckingAccount("Bob", 100);
         System.out.println(c1);
         c1.withdraw(200);
         System.out.println(c1);
@@ -64,7 +66,7 @@ public class BankConsortium {
 
 
         /*
-        BankConsortium crazy = new BankConsortium();
+        Unit7Inheritance.BankConsortium crazy = new Unit7Inheritance.BankConsortium();
         System.out.println(crazy);
          */
     }

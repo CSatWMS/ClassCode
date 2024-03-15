@@ -1,10 +1,12 @@
+package Unit7Inheritance;
+
 public class SavingsAccount extends BankAccount {
     private double interestRate;
 
     public SavingsAccount(double initialBalance, double interestRate){
-       // super.balance = initialBalance; //BAD-> Private access in BankAccount
+       // super.balance = initialBalance; //BAD-> Private access in Unit7Inheritance.BankAccount
        // this.interestRate = interestRate; //BAD -> call to super must be FIRST
-        super(initialBalance); //invokes BankAccount's constructor
+        super(initialBalance); //invokes Unit7Inheritance.BankAccount's constructor
         this.interestRate = interestRate;
     }
 

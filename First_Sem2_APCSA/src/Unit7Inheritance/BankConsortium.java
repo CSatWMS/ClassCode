@@ -1,15 +1,16 @@
-import java.lang.reflect.Array;
+package Unit7Inheritance;
+
 import java.util.ArrayList;
 
 public class BankConsortium {
     public static void main(String[] args) {
         /*
-        BankAccount richGuy = new BankAccount(1000000);
-        BankAccount lessRichGuy = new BankAccount();
+        Unit7Inheritance.BankAccount richGuy = new Unit7Inheritance.BankAccount(1000000);
+        Unit7Inheritance.BankAccount lessRichGuy = new Unit7Inheritance.BankAccount();
         System.out.println(richGuy);
         System.out.println(lessRichGuy);
 
-        SavingsAccount s1 = new SavingsAccount(300, 0.02);
+        Unit7Inheritance.SavingsAccount s1 = new Unit7Inheritance.SavingsAccount(300, 0.02);
         System.out.println(s1);
         s1.deposit(5000);
         s1.withdraw(20);
@@ -24,13 +25,13 @@ public class BankConsortium {
         }
         System.out.println(counter);
 
-        CheckingAccount c1 = new CheckingAccount(100);
+        Unit7Inheritance.CheckingAccount c1 = new Unit7Inheritance.CheckingAccount(100);
         System.out.println(c1);
         c1.withdraw(200);
         c1.withdraw(200);
         System.out.println(c1);
 
-        //BankConsortium craziness = new BankConsortium();
+        //Unit7Inheritance.BankConsortium craziness = new Unit7Inheritance.BankConsortium();
 
         */
 
