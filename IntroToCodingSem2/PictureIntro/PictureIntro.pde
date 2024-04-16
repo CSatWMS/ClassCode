@@ -1,12 +1,39 @@
+color[] flowerPixels;
+
 void setup(){
    size(500, 667);
    PImage img = loadImage("jelly.jpeg");
+   PImage flower = loadImage("flower.jpeg");
+   background(flower);
+   loadPixels();
+   flowerPixels = new color[pixels.length];
+   arrayCopy(pixels, flowerPixels);
    background(img);
 }
 
 void mouseClicked(){
   printPixel(mouseX, mouseY);
-  redSea();
+  //redSea();
+  flowers();
+}
+
+void flowers(){
+  loadPixels();
+  int index = 0;
+  while (index < pixels.length){
+     //do something
+       //replace blue pixels with flower pixels
+     color currentPixel = pixels[index];
+       //is this pixel BLUE?
+       if (red(currentPixel) < 60 &&
+             green(currentPixel) < 110 &&
+               blue(currentPixel) > 90){
+               //  println("BLUE");
+            pixels[index] = flowerPixels[index];
+       }
+     index = index + 1;
+  }
+  updatePixels();
 }
 
 //GOAL: Turn blue pixels to red

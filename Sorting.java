@@ -1,16 +1,16 @@
 public class Sorting{
    public static void main(String[] args){
-   int size = 10;
+      int size = 10;
       int[] arr = new int[size];
       for (int i = 0; i<size; i++){
-         arr[i] = (int) (Math.random() * 10);
+         arr[i] = (int) (Math.random() * 20) - 10;
       }
       printArray(arr);
       //BubbleSort(arr);
       //SelectionSort(arr);
-      //InsertionSort(arr);
+      InsertionSort(arr);
       //int[] test = {4, 3, 2, 1};
-      //System.out.println(sum(test, 1));
+      //System.out.println(sum(test, 0));
       //QuickSort(arr, 0, arr.length-1);
       //printArray(arr);
    }
@@ -107,7 +107,6 @@ public class Sorting{
          while (arr[j] > pivot){
             j--;
          }   
-         
          while (arr[i] < pivot){
             i++;
          }
