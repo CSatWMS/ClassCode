@@ -3,11 +3,13 @@ color[] flowerPixels;
 void setup(){
    size(500, 667);
    PImage img = loadImage("jelly.jpeg");
-   PImage flower = loadImage("flower.jpeg");
-   background(flower);
+   PImage flowerImg = loadImage("flower.jpeg");
+   background(flowerImg);
    loadPixels();
    flowerPixels = new color[pixels.length];
    arrayCopy(pixels, flowerPixels);
+   
+   
    background(img);
 }
 
