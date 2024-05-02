@@ -1,5 +1,7 @@
 int bluePoints = 0;
 int redPoints = 0;
+Paddle bluePaddle = new Paddle(20, 500 / 2 - 70 / 2, 20, 70, color(0, 0, 255));
+Paddle redPaddle = new Paddle(800 - 20 * 2, 500 / 2 - 70 / 2, 20, 70, color(255, 0, 0));
 
 void setup(){
   size(800, 500);
@@ -7,6 +9,8 @@ void setup(){
 
 void draw(){
    drawScreen();
+   bluePaddle.display();
+   redPaddle.display();
 }
 
 void drawScreen(){
@@ -24,4 +28,36 @@ void drawScreen(){
    textSize(50);
    fill(255, 0, 0);
    text(redPoints + "", width / 2 + 40, 45);
+   fill(0, 0, 255);
+   text(bluePoints + "", width / 2 - 65, 45);
 }
+
+class Paddle{
+  //variables (instance variables)
+  int x, y, w, h;
+  color c;
+  //constructor
+  public Paddle(int X, int Y, int W, int H, color C){
+    x = X;
+    y = Y;
+    w = W;
+    h = H;
+    c = C;
+  }
+  //methods
+  
+  void display(){
+    strokeWeight(1);
+    fill(c);
+    rect(x, y, w, h);
+  }
+  
+  void moveUp(){
+    
+  }
+  
+  void moveDown(){
+    
+  }
+  
+} //closes the Paddle class
