@@ -1,9 +1,0 @@
-1. converts from farenheit to celsius (calculate and return a value)
-
-2. converts from celsius to farenheit (calculate and return a value)
-
-3. take in a value in feet, and print out:
-	 inches, miles, and meters
-
-
-
