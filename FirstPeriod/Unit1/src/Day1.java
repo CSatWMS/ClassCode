@@ -6,7 +6,7 @@ public class Day1 {
         System.out.println(3 + 6);
         System.out.println(3 - 7);
         System.out.println(3 * 7);
-        System.out.println(6 / 7);
+        System.out.println(6 / 7); //truncation
         System.out.println(6 / 7.0);
 
     }
