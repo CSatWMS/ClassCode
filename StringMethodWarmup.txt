@@ -1,0 +1,24 @@
+
+Given 2 strings, a and b, create a new string made of the first char of a and the last char of b, so "yo" and "java" yields "ya".
+
+Given a string, str, and an int n, create a string made of the first and last n chars from the string, so "hello" and 2 would make "helo" and "chocolate" and 3 would make "choate"
+
+Given a string of odd length, create a string length 3 from its middle, so "Candy" yields "and";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
