@@ -23,3 +23,9 @@ rect(antX, antY, antWidth, antHeight);
 int doodleX = noseX;
 int doodleY = antY - noseSize/2;
 circle(doodleX, doodleY, noseSize);
+
+int mouthWidth = faceWidth / 2;
+int mouthHeight = faceHeight / 8;
+int mouthX = noseX - mouthWidth / 2;
+int mouthY = noseY + mouthHeight*2;
+rect(mouthX, mouthY, mouthWidth, mouthHeight);
