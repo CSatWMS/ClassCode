@@ -25,6 +25,22 @@ public class FunctionIntro {
 
     } //this closing curly belongs to main
 
+    public static int daysInMonth(String month){
+       // if (month.equals("January") || month.equals("March")) {
+        //    return 31;
+       // }
+
+        switch (month){
+            case "January", "March", "May", "July", "August", "October", "December":
+                return 31;
+            case "February":
+                return 28;
+            default:
+                return 30;
+        }
+    }
+    
+
     //FUNCTIONS CAN GO HERE
     //our first GOAL: is to add to numbers together
     public static int addTogether(int num1, int num2){
