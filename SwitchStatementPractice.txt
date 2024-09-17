@@ -1,0 +1,37 @@
+Write a function that takes in a color as a String
+Use a switch statement to *print* the following results:
+	green -> The grass is green!
+	blue/grey -> The sky is <color>.
+	red/white/yellow -> The rose is <color>.
+
+Write a function that takes in three values:
+	num1, a double
+	num2, a double
+	operator, a String of +, -, /, or *
+Using a switch statement on the operator, perform the relevant arithmetic on num1 and num2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+switch (variable){
+	case "X", "Y", "Z":
+		sout(something);
+		break;
+	case "A", "B":
+		sout(something else);
+		break;
+	default:
+		sout(catch all);
+		break;
+}
+
+
