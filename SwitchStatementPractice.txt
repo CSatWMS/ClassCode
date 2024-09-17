@@ -8,7 +8,7 @@ Write a function that takes in three values:
 	num1, a double
 	num2, a double
 	operator, a String of +, -, /, or *
-Using a switch statement on the operator, perform the relevant arithmetic on num1 and num2.
+Using a switch statement on the operator, perform the relevant arithmetic on num1 and num2. Return the answer.
 
 
 
