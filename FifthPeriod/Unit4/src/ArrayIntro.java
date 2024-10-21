@@ -1,6 +1,16 @@
 public class ArrayIntro {
     public static void main(String[] args) {
         double[] favNumbers = {3.14, 6.28, 6.02, 2.72};
+        double[] grades = new double[9];
+        /*
+        default values:
+        double - 0.0
+        int - 0
+        boolean - false
+        String - null
+        Objects - null
+         */
+        grades[2] = 97;
         int numElements = favNumbers.length;
         System.out.println(numElements);
 

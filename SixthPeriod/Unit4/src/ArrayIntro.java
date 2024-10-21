@@ -4,6 +4,17 @@ public class ArrayIntro {
         int numElements = favNumbers.length;
         System.out.println(numElements);
 
+        double[] grades = new double[10];
+        /*
+        default values:
+        double - 0.0
+        int - 0
+        boolean - false
+        String - null
+        Object - null
+         */
+        grades[4] = 97;
+
         double firstNumber = favNumbers[0];
         double lastNumber = favNumbers[favNumbers.length - 1];
 
