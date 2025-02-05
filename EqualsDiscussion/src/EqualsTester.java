@@ -16,5 +16,7 @@ public class EqualsTester {
         System.out.println(list);
         list.remove(one);
         System.out.println(list);
+
+
     }
 }
