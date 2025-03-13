@@ -29,4 +29,9 @@ public class BankAccount {
     public String toString(){
         return String.format("%s has $%.2f", owner, balance);
     }
+
+    public void transferFunds(BankAccount other, double money){
+        this.balance -= money;
+        other.deposit(money); // other.balance += money;
+    }
 }

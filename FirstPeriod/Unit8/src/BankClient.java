@@ -29,5 +29,37 @@ public class BankClient {
         System.out.println(c1);
         c1.withdraw(10000);
         System.out.println(c1);
+
+        BankAccount a = new BankAccount("A", "Bank A");
+        BankAccount b = new BankAccount("B", "Bank B");
+        a.deposit(200);
+        a.transferFunds(b, 50);
+        System.out.println(a);
+        System.out.println(b);
+
+        SavingsAccount c = new SavingsAccount("C", "Bank C", 0.05);
+        a.transferFunds(c, 50);
+        System.out.println(a);
+        System.out.println(c);
+
+        BankAccount d = new SavingsAccount("D", "Bank D", 0.07);
+        d.deposit(500);
+        //d.compoundInterest(); //compile-time error
+        System.out.println(d); //When I can do a more specific thing, I do the more specific thing (overriden methods)
+
+        ( (SavingsAccount) d).compoundInterest(); //DANGEROUS
+       // ( (CheckingAccount) d).deposit(20); //BE CAREFUL- RTE- ClassCastException
+
+        //how can we cast safely?
+        // instanceof
+        System.out.println("is D A bankAccount?: " + (d instanceof BankAccount));
+        System.out.println("is D A SavingsAccount?: " + (d instanceof SavingsAccount));
+        System.out.println("is D A CheckingAccount?: " + (d instanceof CheckingAccount));
+
+        if (d instanceof CheckingAccount){
+            ((CheckingAccount) d).deposit(20);
+        } else {
+            System.out.println("WRONG DATATYPE");
+        }
     }
 }

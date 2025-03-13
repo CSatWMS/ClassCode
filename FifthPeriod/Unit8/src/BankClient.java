@@ -32,5 +32,36 @@ public class BankClient {
         System.out.println(s1);
         s1.compoundInterest();
         System.out.println(s1);
+
+        BankAccount a = new BankAccount(100);
+        BankAccount b = new BankAccount(100);
+        a.transferFunds(b, 50);
+        System.out.println("A: " + a);
+        System.out.println("B: " + b);
+
+        SavingsAccount c = new SavingsAccount(.05);
+        a.transferFunds(c, 25);
+        System.out.println("A: " + a);
+        System.out.println("C: " + c);
+
+        BankAccount z = new SavingsAccount(0.05);
+        System.out.println("Z: " + z);
+        z.deposit(500);
+        //z.compoundInterest(); restrictive jacket prevents compounding
+        ( (SavingsAccount) z ).compoundInterest(); //DANGER
+
+        BankAccount y = new CheckingAccount();
+       // ( (SavingsAccount) y).compoundInterest(); //BE CAREFUL -> RTE ClassCastException
+
+        //instanceof
+        System.out.println("Z is BankAccount: " + (z instanceof BankAccount));
+        System.out.println("Z is SavingsAccount: " + (z instanceof SavingsAccount));
+        System.out.println("Z is CheckingAccount: " + (z instanceof CheckingAccount));
+
+        if (y instanceof SavingsAccount){
+            ( (SavingsAccount) y).compoundInterest();
+        } else {
+            System.out.println("NOT A SAVINGS ACCOUNT");
+        }
     }
 }

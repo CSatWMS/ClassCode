@@ -31,5 +31,34 @@ public class BankClient {
         c1.withdraw(500);
         System.out.println(c1);
         c1.withdraw(500);
+
+        BankAccount a = new BankAccount("A");
+        BankAccount b = new BankAccount("B");
+        a.deposit(250);
+        a.transferFunds(b, 50);
+        System.out.println(a);
+        System.out.println(b);
+
+        SavingsAccount c = new SavingsAccount("C", 0.05);
+        a.transferFunds(c, 50);
+        System.out.println(a);
+        System.out.println(c);
+
+        BankAccount d = new SavingsAccount("D", 0.5);
+        d.deposit(1000);
+        //d.compoundInterest(); compile time error -> one armed jacket rule
+        System.out.println(d); //when I can do a more specific thing, I do the more specific thing
+
+        ( (SavingsAccount) d).compoundInterest(); //temporary casts ARE DANGEROUS
+        System.out.println(d);
+
+        //( (CheckingAccount) d).deposit(20); //BE CAREFUL!
+
+        //instanceof -> sees through jackets
+        System.out.println("D is a BankAccount: " + (d instanceof BankAccount));
+        System.out.println("D is a SavingsAccount: " + (d instanceof SavingsAccount));
+        System.out.println("D is a CheckingAccount: " + (d instanceof CheckingAccount));
+
+
     }
 }

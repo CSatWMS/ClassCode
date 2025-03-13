@@ -28,5 +28,10 @@ public class BankAccount {
         return String.format("The balance is: $%.2f", balance);
     }
 
+    public void transferFunds(BankAccount other, double amt){
+        this.balance -= amt;
+        other.deposit(amt); //other.balance += amt
+    }
+
 
 }

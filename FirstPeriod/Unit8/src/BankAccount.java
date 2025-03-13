@@ -26,4 +26,9 @@ public class BankAccount {
     }
 
 
+    public void transferFunds(BankAccount other, double money){
+        this.balance -= money;
+        other.deposit(money); //other.balance += money;
+    }
+
 }
