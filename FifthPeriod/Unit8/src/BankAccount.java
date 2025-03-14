@@ -1,8 +1,13 @@
-public class BankAccount {
+
+public class BankAccount implements Measurable {
     private double balance;
 
     public BankAccount(double balance) {
         this.balance = balance;
+    }
+
+    public int getMeasure(){
+        return (int) balance;
     }
 
     /*
