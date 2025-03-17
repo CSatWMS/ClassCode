@@ -1,4 +1,4 @@
-public class BankAccount {
+public class BankAccount implements Measurable {
     private String bank, owner;
     private double balance;
 
@@ -6,6 +6,14 @@ public class BankAccount {
         this.owner = owner;
         this.bank = bank;
         balance = 0;
+    }
+
+    public int getMeasure(){
+        return (int) balance;
+    }
+
+    public String getUnit(){
+        return "Dollars";
     }
 
     public void deposit(double amt){
