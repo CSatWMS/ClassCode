@@ -21,4 +21,24 @@ public abstract class ComicCharacter {
         toReturn += "\nThey work as a " + occupation + " and are a " + gender;
         return toReturn;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public String getOccupation() {
+        return occupation;
+    }
+
+    public String getUniverse() {
+        return universe;
+    }
+
+    public int getAge() {
+        return age;
+    }
 }
