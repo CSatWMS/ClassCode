@@ -23,6 +23,17 @@ public class RecursionBasics {
         System.out.println(isPalindrome("Madam I'm Adam"));
         System.out.println(getPermutations("eat"));
         System.out.println(getPermutations("seat"));
+        solveTOH(3, 1, 3, 2);
+    }
+
+    public static void solveTOH(int numDisks, int start, int dest, int aux){
+        if (numDisks == 1){
+            System.out.println("Move 1 disk from " + start + " to " + dest);
+        } else {
+            solveTOH(numDisks - 1, start, aux, dest);
+            solveTOH(1, start, dest, aux);
+            solveTOH(numDisks - 1, aux, dest, start);
+        }
     }
 
     public static ArrayList<String> getPermutations(String str){
