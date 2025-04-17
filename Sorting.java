@@ -192,9 +192,9 @@ public class Sorting{
    public static boolean binaryIterative(int[] arr, int targetNumber){
       int left = 0;
       int right = arr.length - 1;
-      int middle = (right - left) / 2;
+      int middle = (right + left) / 2;
       while (arr[middle] != targetNumber && right > left){
-          middle = (right - left) / 2;
+          middle = (right + left) / 2;
          if (targetNumber < arr[middle]){
             right = middle;
          } else if (targetNumber > arr[middle]){
