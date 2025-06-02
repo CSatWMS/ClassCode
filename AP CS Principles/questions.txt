@@ -1,9 +1,0 @@
-Questions Ms. Snyder can answer:
-	How does a for loop work?
-	What does this requirement mean?
-	Where can I find an example of this in my notes?
-
-Questions Ms. Snyder is not allowed to answer:
-	How should this loop work in my code?
-	Have I met this requirement?
-	Why is my project broken?

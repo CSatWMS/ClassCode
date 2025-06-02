@@ -1,7 +1,7 @@
 # ClassCode
  
-## AP CS A and AP CS Princples
+## AP CS Princples
 
-### 2024-2025
+### Summer 2025
 
 Class code from lectures will live here.

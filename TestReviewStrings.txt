@@ -1,8 +1,0 @@
-
-Given two Strings, str1 and str2, locate the position of the first string in the second string.	So "cat" and "concatenate" should display 3.
-
-
-Given a string of any length, return a new string where the last 2 chars are swapped, so "coding" yields "codign".
-
-
-
