@@ -1,0 +1,12 @@
+Warmup - try not to look at your notes!
+ (questions are allowed/encouraged!)
+
+Create a new processing file called WarmUp6_4
+
+Define functions for the following two tasks. Call each function in setup() with listed example values.
+
+1. Given a temperature in celsius, convert it to farenheit.
+	(100 C -> 212 F)
+
+2. Given A and B, solve for C in the pythagorean theorem.
+	(A:3, B:4 -> C:5)
