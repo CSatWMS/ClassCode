@@ -1,5 +1,6 @@
 void setup(){
-  
+  size(500, 500);
+  robot(250, 250, 120, 70);
 }
 
 //x = middle of nose
