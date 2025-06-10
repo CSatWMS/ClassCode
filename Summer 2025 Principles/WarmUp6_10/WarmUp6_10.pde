@@ -27,6 +27,7 @@ void setup() {
   int num3 = 81;
   while (num3 > 0){
      print(num3 + ", "); 
+     num3 /= 3;
   }
   
 }
