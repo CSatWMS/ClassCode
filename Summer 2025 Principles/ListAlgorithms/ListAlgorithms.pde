@@ -15,6 +15,7 @@ void setup() {
   println(numbers);
   println(sumTotal(numbers));
   println(average(numbers));
+  println(findMax(numbers));
 }
 
 //GOAL: is to return the largest value in a FloatList
@@ -24,9 +25,10 @@ float findMax(FloatList list){
     for (int i = 0; i < list.size(); i++){
        float currNumber = list.get(i);
        if (currNumber > stickyNote){
-           
+          stickyNote = currNumber;
        }
     }
+    return stickyNote;
 }
 
 //Aggretation Algorithm
