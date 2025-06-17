@@ -1,0 +1,41 @@
+IntList FloatList and StringList Review.
+
+Answer the following questions:
+	1. Why do we use Lists?
+		More than one value in a single variable
+		With loops, we can access or adjust multiple things at once
+	2. What is the difference between an index and an element?
+		index = position (of an element) (always int)
+		element is a thing/value at a location/index (SFI)
+	3. What is the loop we use to traverse a List? Explain each part.
+		for (int index = 0; index < numberOfThings; index++)
+				A 					B 					C
+		A: initialize at zero because it's the first place in the list
+		B: condition, until you get to the end of the list
+			NOT <= because numberOfThings is not an index
+		C: update the index, move through the list
+			index++ ==== index += 1 ==== index = index + 1
+
+For each of the following methods:
+	1. List the number of parameter(s)
+	2. If (numberParams >= 1) -> list data type(s)* and description(s)
+	3. List the return type* (void is a return type)
+	4. If (returnType != void) -> describe what it returns
+
+*For this assignment, if the datatype could be int or float or String, say SFI.
+
+listName.method(??);
+
+			1		2						3			4
+size		0		n/a 					int 		Number of Elements
+get			1		int index/location		SFI			Element
+set			2		int index, SFI Element 	void		n/a
+append		1		SFI value				void		n/a
+remove		1		int index				SFI			the thing that we removed
+
+
+
+
+
+
+
