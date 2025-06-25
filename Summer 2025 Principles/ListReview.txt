@@ -1,0 +1,135 @@
+Lists:
+
+size() -> number of elements in a list
+get(index) -> returns the element at that index (could be String, float or int)
+append(element) -> the element adds on to the end
+remove(index) -> returns the thing that got removed
+set(index, value) -> void return type (update or change)
+
+
+
+list = [5, 3, 7, 1];
+
+int old = list.remove(1);
+
+	list -> [5, 7, 1]
+	old -> 3
+
+list.set(1, 302);
+
+	list -> [5, 302, 1]
+
+function headers:
+returnType funcName(parameters)
+				datatype varName
+
+a -> [7, 2, 3, 8, 1, 9];
+	  0, 1, 2, 3, 4, 5
+
+boolean commondEnd(IntList a, IntList b){
+	int firstA = a.get(0);
+	int firstB = b.get(0);
+	int lastIndexA = a.size() - 1;
+	int lastA = a.get(lastIndexA);
+	int lastB = b.get(b.size() - 1);
+	if (firstA == firstB && lastA == lastB){
+		return true;
+	} else {
+		return false;
+	}
+}
+
+
+GOAL: determine if a list contains any even number
+	containsEven([3, 5, 2, 7]) -> true
+	containsEven([1, 3, 5]) -> false
+
+boolean containsEven(IntList list){
+	for (int fish = 0; fish < list.size(); fish++){
+		int currNumber = list.get(fish);
+		if(currNumber % 2 == 0){
+			return true;
+		}
+	}
+	return false;
+}
+
+
+list = [12, 15, 17, 21, 32, 11]
+
+list = [3, 5, 2, 7, -10]
+
+
+return the sum of the largest and smallest
+
+int xtremeSum(IntList list){
+	int min = list.get(0);
+	int max = list.get(0);
+	for (int i = 0; i < list.size(); i++){
+		int currNumber = list.get(i);
+		if (currNumber > max){
+			max = currNumber;
+		} else if (currNumber < min){
+			min = currNumber;
+		}
+	}
+	return max + min;
+}
+
+
+return true if ALL values are at or below the threshold
+	opposite ANY problem
+		return false if ANY value is above the threshold
+
+list -> [4, 6, 2, 8]
+threshold -> 7
+
+list -> [2, 3, 6, 5]
+
+for (int i = 0; i < list.size(); i++){
+	int currValue = list.get(i);
+
+	if (currValue > threshold){
+		return false;
+	}
+}
+return true;
+
+
+
+
+
+
+function headers:
+	returnType funcName(dt1 var1, dt2 var2){
+		//code
+	}
+
+int add(int num1, int num2){
+	//code
+}
+
+call #1:
+	returnType answerName = funcName(value1, value2);
+	println(answerName);
+
+	int result = add(3, 4);
+	println(result);
+
+call #2:
+	println(funcName(value1, value2));
+
+	println(add(3, 4));
+
+
+
+
+
+
+
+
+
+
+
+
+
