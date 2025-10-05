@@ -2,6 +2,6 @@
  
 ## AP CS Princples
 
-### Summer 2025
+### 2025 - 2026
 
 Class code from lectures will live here.
