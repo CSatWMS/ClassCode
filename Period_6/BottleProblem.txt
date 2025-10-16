@@ -1,0 +1,35 @@
+Ms. Snyder has to feed her babies every three hours.
+She starts to feed them at midnight (hour zero), and then
+every 3 hours after that (3, 6, 9, etc).
+
+Write a function that takes in the hour and lets Ms. Snyder know if she should grab a bottle or not.
+
+grabABottle(18) -> true
+grabABottle(2) -> false
+grabABottle(3) -> true
+
+
+
+
+
+
+
+
+
+
+Extension:
+Since she has twins, if it's 30 minutes before the hour, or up to 30 minutes after, she should grab a bottle. Write another function that takes in the hour and the minute and provides a more correct answer.
+
+grabABottle(18, 0) -> true
+grabABottle(2, 45) -> true
+grabABottle(3, 45) -> false
+
+
+
+
+
+
+
+
+
+
