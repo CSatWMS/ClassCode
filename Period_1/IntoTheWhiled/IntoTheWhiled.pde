@@ -33,8 +33,57 @@ void setup(){
   println("Blastoff!");
   
   //3, 6, 9, 12, 15, 18, 21
+  int count3 = 3;
+  while (count3 <= 21){
+     print(count3 + ", ");
+     count3 += 3; //count3 = count3 + 3;
+  }
+  println();
   //25, 21, 17, 13, 9, 5, 1
+  int count4 = 25;
+  while (count4 >= 1){
+     print(count4 + ", ");
+     count4 -= 4; //count4 = count4 - 4;
+  }
+  println();
   //1, 2, 4, 8, 16, 32, 64
+  int result = 1;
+  while (result <= 64){
+     print(result + ", ");
+     result *= 2;
+  }
+  println();
   
+  int exponent = 0;
+  while (exponent < 7){
+     print((int) pow(2, exponent) + ", ");
+     exponent++;
+  }
   
-}
+  printNumbers(2, 5);
+  printNumbers(7, 3);
+} //curly for setup
+
+//GOAL: write a function that counts up or down from parameter a to parameter b
+//printNumbers(2, 5) -> (2, 3, 4, 5)
+//printNumbers(7, 3) -> (7, 6, 5, 4, 3)
+void printNumbers(int a, int b){
+  println();
+  if (a < b){
+     //count UP
+     int counter = a;
+     while (counter <= b){
+        print(counter + ", ");
+        counter++;
+     } //ends the while
+  } //ends the if
+  else {
+     //count DOWN
+     int counter = a;
+     while (counter >= b){
+        print(counter + ", ");
+        counter--;
+     }
+  }
+  println();
+} //ends the function
