@@ -1,0 +1,14 @@
+Navigate to: codingbat.com
+Create an account
+	-Use your WM email
+	-Use a password you'll remember
+	-They don't validate your email, so be sure it's typed correctly or you'll never be able to login again
+Be sure you're now in the Java Tab
+Find the Logic-1 Section
+Find the in1To10 problem
+Solve
+	While it's technically java, the ONLY difference between this and Processing is the word "public" which does not have an impact
+Use the "next" button to advance through and solve:
+	specialEleven
+	more20
+	old35
