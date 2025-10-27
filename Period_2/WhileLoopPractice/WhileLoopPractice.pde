@@ -1,6 +1,6 @@
 void setup() {
   size(500, 500);
-  
+
   //1, 3, 5, 7, 9
   int num1 = 1;
   while (num1 <= 9) {
@@ -24,59 +24,88 @@ void setup() {
 
   printNumber(2, 5);
   printNumber(7, 3);
-  
+
   fancyPrint(3, 11);
-  
-  drawTopRow(50);
-  drawTopRow(10);
+
+  //drawTopRow(50);
+  //drawTopRow(50);
+
+  drawBullsEye(75);
 } //ends the setup
 
+void drawBullsEye(int gapSize) {
+  int x = width / 2;
+  int y = height / 2;
+  int diameter = width;
+  int francis = 0;
+
+  while (diameter > 0) {
+    francis++;
+    if (francis % 2 == 0) {
+      fill(255, 0, 0);
+    } else {
+      fill(255, 255, 255);
+    }
+    circle(x, y, diameter);
+    diameter -= gapSize;
+  }
+}
+
 //GOAL: fill top row with circles
-void drawTopRow(int diam){
+void drawTopRow(int diam) {
   int radius = diam / 2;
   int x = radius;
   int y = radius;
   int numCircles = width / diam;
   int counter = 0;
-  while (counter < numCircles){
-  circle(x, y, diam);
-  x += diam; //x = x + diam;
-  counter++;
+  while (counter < numCircles) {
+    // while (x < width){
+    if (counter % 3 == 0) {
+      fill(255, 0, 0);
+    } else if (counter % 3 == 1) {
+      fill(0, 255, 0);
+    } else if (counter % 3 == 2) {
+      fill(0, 0, 255);
+    } else {
+      fill(255, 255, 255);
+    }
+    circle(x, y, diam);
+    x += diam; //x = x + diam;
+    counter++;
   }
-  
 }
 
 
 //GOAL: write a function, called fancyPrint, that takes in two integers
-  //count UP from a to b (assume a is smaller than b)
-  //label even
-  //label round (divisible by 5)
-  //label both (divisible by 5 and even)
-  
-  //fancyPrint(3, 11);
-    //3
-    //4 - even
-    //5 - round
-    //6 - even
-    //7
-    //8 - even
-    //9
-    //10 - both
-    //11
-void fancyPrint(int small, int big){
-    println();
-    while (small <= big){
-       print(small);
-       if (small % 2 == 0 && small % 5 == 0){
-         print(" - both");
-       } else if (small % 2 == 0){
-         print(" - even"); 
-       } else if (small % 5 == 0){
-         print(" - round"); 
-       }
-       println();
-       small++;
+//count UP from a to b (assume a is smaller than b)
+//label even
+//label round (divisible by 5)
+//label both (divisible by 5 and even)
+
+//fancyPrint(3, 11);
+//3
+//4 - even
+//5 - round
+//6 - even
+//7
+//8 - even
+//9
+//10 - both
+//11
+void fancyPrint(int small, int big) {
+  println();
+  while (small <= big) {
+    print(small);
+    if (small % 2 == 0 && small % 5 == 0) {
+      print(" - both");
+    } else if (small % 2 == 0) {
+      print(" - even");
+    } else if (small % 5 == 0) {
+      print(" - round");
     }
+    println();
+    small++;
+  }
 }
 
 

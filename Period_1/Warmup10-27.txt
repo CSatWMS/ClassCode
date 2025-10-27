@@ -1,3 +1,28 @@
+int a = 3;
+while (a < 7){
+	print(a + ", ");
+	a++;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 int x = 5;
 while (x % 3 != 0){
 	print (x + ", ");
@@ -15,3 +40,4 @@ while (z >= 1){
 	print(z + ", ");
 	z = z / 3;
 }
+
