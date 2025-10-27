@@ -1,0 +1,17 @@
+int x = 5;
+while (x % 3 != 0){
+	print (x + ", ");
+	x++;
+}
+
+int y = 12;
+while (y > 0){
+	print(y + ", ");
+	y -= 2;
+}
+
+int z = 17;
+while (z >= 1){
+	print(z + ", ");
+	z = z / 3;
+}

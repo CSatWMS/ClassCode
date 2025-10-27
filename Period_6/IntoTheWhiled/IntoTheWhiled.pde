@@ -70,5 +70,21 @@ void setup(){
   //printNumbers(2, 5) -> 2, 3, 4, 5
   //printNumbers(7, 3) -> 7, 6, 5, 4, 3
 void printNumbers(int a, int b){
+  println();
+  if (b > a){
+     //count UP 
+     int walky = a;
+     while (walky <= b){
+       print(walky + ", ");
+       walky++;
+     }
+  } else {
+     //count DOWN 
+     int walky = a;
+     while (walky >= b){
+       print(walky + ", ");
+       walky = walky - 1; //walky--;
+     }
+  }
   
 }

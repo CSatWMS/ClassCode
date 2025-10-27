@@ -1,0 +1,9 @@
+GOAL: Write a loop that counts from 1 to 10
+
+int monday = 1; //initialization
+while (monday <= 10){ //condition runs while true
+	
+	monday++; //update
+
+	print(monday + ", "); //do stuff
+}
