@@ -21,10 +21,27 @@ void setup() {
     num3 /= 3;
   }
   fancyPrint(3, 11);
-  drawTopRow(100);
-  drawTopRow(50);
-  drawTopRow(10);
+  //drawTopRow(100);
+  //drawTopRow(50);
+  //drawTopRow(50);
+  drawBullsEye(15);
 } //ends my setup function
+
+void drawBullsEye(int gapSize){
+  int diameter = width;
+  int counter = 0;
+  while (diameter > 1){
+     if (counter % 2 == 0){
+       fill(255, 0, 0);
+     } else {
+       fill(255, 255, 255);
+     }
+     circle(width / 2, height / 2, diameter);
+     diameter -= gapSize;
+     counter++;
+  }
+  
+}
 
 //GOAL: Draw a row of circles at the top, given the diameter
 void drawTopRow(int diam) {
@@ -34,6 +51,16 @@ void drawTopRow(int diam) {
   int numCircles = width / diam;
   int counter = 0;
   while (counter < numCircles) {
+    //while (x < width){
+    if (counter % 3 == 0){
+       fill(255, 0, 0); 
+    } else if (counter % 3 == 1){
+       fill(0, 255, 0);
+    } else if (counter % 3 == 2){
+       fill(0, 0, 255);
+    } else {
+       fill(255, 255, 255); 
+    }
     circle(x, y, diam);
     x += diam;
     counter++;

@@ -1,0 +1,41 @@
+int a = 3;
+while (a < 7){
+	print(a + ", ");
+	a++;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int x = 5;
+while (x % 4 != 0){
+	print (x + ", ");
+	x++;
+}
+
+int y = 12;
+while (y > 0){
+	print(y + ", ");
+	y -= 2; // y = y - 2;
+}
+
+int z = 17;
+while (z >= 1){
+	print(z + ", ");
+	z = z / 3;
+}
+
