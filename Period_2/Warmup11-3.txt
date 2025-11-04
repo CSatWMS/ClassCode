@@ -7,3 +7,8 @@ Count the number of numbers that are divisble between a start and end point
 countDivisible(0, 10, 2) -> 6
 countDivisible(1, 12, 3) -> 4
 
+function header
+
+plan of attack
+
+
