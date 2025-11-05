@@ -6,6 +6,7 @@ void setup(){
      println();
    }
    println(averageRoll(numRolls));
+   println(countDoubles(numRolls));
 }
 
 //GOAL: Given a number of simulations, caluclate the average roll sum

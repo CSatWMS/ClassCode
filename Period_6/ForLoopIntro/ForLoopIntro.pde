@@ -30,8 +30,20 @@ void setup(){
    println();
    
    //3, 6, 9, 12, 15
+   for (int x = 3; x <= 15; x += 3){
+      print(x + ", "); 
+   }
+   println();
    //25, 21, 17, 13, 9, 5, 1
+   for (int y = 25; y >= 1; y-= 4){
+      print(y + ", ");
+   }
+   println();
    //2, 4, 8, 16, 32, 64, 128, 256
+   for (int z = 2; z <= 256; z *= 2){
+      print(z + ", "); 
+   }
+   println();
    
   
    
