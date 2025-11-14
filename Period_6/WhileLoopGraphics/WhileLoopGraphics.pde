@@ -2,10 +2,10 @@
 void setup() {
   size(500, 500);
   //drawCircleRow(100);
-  //drawCircleRow(50);
+  drawCircleRow(50);
   //drawCircleRow(10);
   
-  drawBullsEye(75);
+  //drawBullsEye(75);
 }
 
 void drawBullsEye(int gapSize){

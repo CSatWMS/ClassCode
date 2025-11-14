@@ -1,0 +1,122 @@
+1. Initialize
+2. While (condition is true){
+	3. Do something
+	4. Update
+}
+do whatevers down here when false
+
+
+
+
+
+
+
+
+2. for (init ; condition ; update){
+	do something
+}
+
+3. 
+int counter = 0;
+while (counter <= 4){
+	print(counter);
+	counter++;
+}
+
+for (int a = 0; a < 5; a = a + 1){
+	println(a);
+}
+
+void countUp(int start){
+	int counter = 0;
+	while (counter <= 4){
+		println(counter);
+		counter = counter + 1
+	}
+}
+
+
+
+
+
+
+
+3.
+for (int i = 0; i < 5; i++){
+	print(i);
+}
+
+for (int i = 1; i <= 5; i++){
+	print(i - 1);
+}
+
+for (int i = 0; i <= 4; i++){
+	print(i);
+}
+
+4. % = modulus
+	finds remainder after division
+
+	divisibility (remainder needs to be zero)
+	makes a repeated pattern
+
+	Anything % num ->  0, 1, 2 .... num - 1
+
+		anything % 2 -> 0, 1, 0, 1
+		anything % 4 -> 0, 1, 2, 3, 0, 1, 2, 3
+			7 % 4 -> 3
+
+
+
+
+
+
+5. Counting Up/Down
+	1. Initialize a number to be A
+	2. While (number > or < B)
+		3. print(number)
+		4. number++ or number--
+
+
+6. 
+
+loop
+	if (someNumber % x == 0){
+		know someNumber is divisible
+		print(someNumber);
+	}
+
+7. 
+init counter (typically zero)
+loop
+	if (the condition we're counting is true)
+		counter++
+
+after loop -> counter contains answer
+
+8. 
+collecting
+
+	sums:
+		init sum variable
+		loop
+			sum += something
+		after loop -> sum contains answer
+
+	collecting specific things:
+		init collector
+		loop
+			if (specific time){
+				collector += the thing
+			}
+		after loop -> collector contains answer
+
+
+9. 	table that keeps track of variables as they change over time
+	helps identify errors in updating and knowing if the last value is included or excluded
+
+
+
+
+	
+

@@ -1,7 +1,7 @@
 void setup() {
   size(300, 300);
-  //fillRow(50);
-  drawBullsEye(5);
+  fillRow(40);
+  //drawBullsEye(5);
 }
 
 void drawBullsEye(int gapSize){
@@ -22,26 +22,24 @@ void drawBullsEye(int gapSize){
 
 void fillRow(int diam) {
   int numCircles = width / diam;
-  //A
   int x = diam / 2;
-  int counter = 0;
-  while (counter < numCircles) {
-    //while (x < width){
-    //B
+  int counter = 100;
     int y = diam / 2;
-    if (counter % 3 == 0) {
-      fill(255, 0, 0);
-    } else if (counter % 3 == 1) {
-      fill(0, 255, 0);
-    } else if (counter % 3 == 2){
-      fill(0, 0, 255);
+  //while (counter < numCircles) {
+  while (x < width){
+    if (counter % 5 == 0) {
+      fill(255, 0, 0); //RED
+    } else if (counter % 5 == 1) {
+      fill(0, 255, 0); //GREEN
+    } else if (counter % 5 == 2){
+      fill(0, 0, 255); //BLUE
+      } else if (counter % 5 == 3){
+        fill(#000000);
     } else {
       fill(255, 255, 255);
     }
     circle(x, y, diam);
     counter++;
-    //C
     x += diam;
   }
-  //D
 }
