@@ -13,6 +13,5 @@ while (a < 5){
 	println();
 }
 print(a + ", " + b + ", " + c);
-
-Given start and stop, inclusively move up from start to stop, printing certain numbers.
-Only print numbers between that are divisible by 3 and odd. You can assume start is less than stop.
+--------------------
+Given start and stop, write a function to inclusively move up from start to stop, printing certain numbers. Only print numbers between that are divisible by 3 and odd. You can assume start is less than stop.

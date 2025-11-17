@@ -1,0 +1,85 @@
+1. 
+Initialize
+While()
+	do something
+	update
+
+2.
+for (initialize ; condition ; update){
+	do something
+}
+
+3.
+for (int x = 0; x <= 4; x++) {print(x);}
+for (int a = 0; a < 5; a++) {print(a);}
+for (int z = -1; z < 4; z++) {print(z + 1);}
+for (int y = 1; y <= 5; y++){print(y - 1);}
+int a = 0;
+while (a < 5){
+	print(a);
+	a++;
+}
+
+4.
+% = Mod aka Modulus
+A % B = the remainder after I divide A by B
+
+Helps make my code more precise
+	Find even / odd -> Divisibility (the remainder has to be zero)
+
+	Pattern Recognition
+		any positive whole number % 2 -> 0, 1, 0, 1, 0, 1, 0, 1
+		any positive whole number % 4 -> 0, 1, 2, 3, 0, 1, 2, 3
+
+5.
+number = A
+while (number <>(=) B){
+	print(number)
+	number ++ / --;
+}
+
+
+int woot = A;
+while (woot <= yeet){
+	print(woot);
+	woot++;
+}
+6.
+get a loop
+	if (variable % X == 0){
+		print(variable + " is divisble");
+	}
+
+7.
+make a counter
+loop
+	if (it's time to count){
+		counter++;
+	}
+after loop, counter has the answer
+
+8.
+
+make a collector / basket
+loop
+	basket += a thing
+at the end, basket has the answer
+
+SumEven
+int basket = 0;
+for (int x = A ; x <= B; x++){
+	if (x % 2 == 0){
+		basket += x;
+	}
+}
+return basket;
+
+9.
+table that keeps track of variables as they change over time
+	helps identify errors in updating and knowing if the last value is included or excluded
+
+
+
+
+
+

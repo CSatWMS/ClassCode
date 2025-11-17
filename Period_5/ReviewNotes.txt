@@ -1,0 +1,78 @@
+1.
+initialize
+while (condition is true)
+	do something
+	update
+
+2.
+for (init ; condition ; update)
+	do something
+	
+3. 
+for (int i = 0; i < 5; i++) print(i)
+for (int a = 0; a <= 4; a++) print(a)
+for (int x = 0; x == 0 || x % 5 != 0 ; x++) print(x)
+for (int i = 0; i != 5; i++) print(i)
+for (int z = 1; z <= 5; z++) print(z - 1);
+
+4.
+Mod aka Modulus
+Calculates a remainder
+	A % B = The remainder after A is divided by B
+1. Even / Odd -> Generally identifying divisibility
+2. Patterns
+	any positive whole number % 2 -> 0, 1, 0, 1, 0, 1
+	any positive whole number % 4 -> 0, 1, 2, 3, 0, 1, 2, 3, 0, 1, 2, 3
+
+5.
+number = A
+while (number > or < maybe = B)
+	print(number)
+	number ++ / --;
+
+for (number = A; number > < (=) B ; number (+-)= 1){
+	print(number)
+}
+
+6.
+have a loop
+	if (number % X == 0){
+		print(number)
+	}
+
+7.
+make a counter
+loop
+	if (it's time to count)
+		counter++
+after loop, we have the count
+
+8. 
+make a collector / basket
+loop
+	basket += something
+
+after loop, basket has the answer
+
+sumEven:
+	int basket = 0;
+	loop
+		if (num % 2 == 0){
+			basket += num
+		}
+	return basket;
+
+9.
+It helps you track what is printed and it's very helpful
+	if you miss a step and can verify
+A good way to organize your thoughts
+Shows values over time
+
+
+
+
+
+
+
+
+
