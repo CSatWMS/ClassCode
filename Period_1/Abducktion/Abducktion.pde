@@ -2,6 +2,8 @@ int A, B, C, D, E, F;
 boolean needA, needB, needC, needD, needE, needF;
 int fullLight = 255;
 
+color white = #FFFFFF;
+
 int duckWidth = 200;
 int duckHeight = 100;
 
